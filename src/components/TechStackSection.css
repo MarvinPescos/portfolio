@@ -1,0 +1,24 @@
+.tech-category {
+  margin-bottom: var(--space-lg);
+}
+
+.tech-category:last-child {
+  margin-bottom: 0;
+}
+
+.tech-category-title {
+  font-size: var(--font-sm);
+  font-weight: 700;
+  margin-bottom: var(--space-sm);
+  color: var(--color-text-primary);
+}
+
+.tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+}
+
+.tag svg {
+  flex-shrink: 0;
+}
