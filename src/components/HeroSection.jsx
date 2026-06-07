@@ -1,4 +1,4 @@
-import { MapPin, Mail, CheckCircle, ChevronRight, Sun, Moon } from 'lucide-react';
+import { MapPin, Mail, ChevronRight, Sun, Moon } from 'lucide-react';
 import './HeroSection.css';
 
 export default function HeroSection({ darkMode, toggleDarkMode }) {
@@ -11,7 +11,10 @@ export default function HeroSection({ darkMode, toggleDarkMode }) {
         <div className="hero-info">
           <div className="hero-name-row">
             <h1 className="hero-name">Marvin Pescos</h1>
-            <CheckCircle className="verified-icon" size={18} />
+            <svg viewBox="0 0 24 24" width="18" height="18" className="verified-icon" aria-label="Verified Profile">
+              <path d="M23 12l-2.44-2.79.34-3.69-3.61-.82-1.89-3.2L12 2.96 8.6 1.5 6.71 4.7 3.1 5.52l.34 3.69L1 12l2.44 2.79-.34 3.69 3.61.82 1.89 3.2L12 21.04l3.4 1.46 1.89-3.2 3.61-.82-.34-3.69L23 12z" fill="var(--color-verified)" />
+              <path d="M9.09 16.72l-3.8-3.81 1.48-1.48 2.32 2.33 5.85-5.87 1.48 1.48-7.33 7.35z" fill="#ffffff" />
+            </svg>
             <button className="theme-toggle" onClick={toggleDarkMode} aria-label="Toggle theme">
               <div className={`toggle-track ${darkMode ? 'active' : ''}`}>
                 <div className="toggle-thumb">

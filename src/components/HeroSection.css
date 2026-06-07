@@ -42,8 +42,6 @@
 }
 
 .verified-icon {
-  color: var(--color-accent);
-  fill: var(--color-accent);
   flex-shrink: 0;
 }
 
