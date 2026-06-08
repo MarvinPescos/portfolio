@@ -1,8 +1,8 @@
 import './ExperienceSection.css';
 
 const experiences = [
-  { role: 'BSIT Graduate (Expected)', desc: 'Davao del Norte State College', year: '2022–2027', active: true },
-  { role: 'Hello World! 👋', desc: 'Wrote my first line of code', year: '2022', active: false },
+  { role: 'BSIT Graduate (Expected)', desc: 'Davao del Norte State College', year: '2023–2027', active: true },
+  { role: 'Hello World! ', desc: 'Wrote my first line of code', year: '2022', active: false },
 ];
 
 export default function ExperienceSection() {
