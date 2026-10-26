@@ -3,11 +3,11 @@
 }
 
 .contact-headline {
-  font-size: 32px;
+  font-size: 40px;
   font-weight: 300;
-  line-height: 1.25;
-  letter-spacing: -0.02em;
-  max-width: 560px;
+  line-height: 1.2;
+  letter-spacing: -0.015em;
+  max-width: 600px;
   text-wrap: balance;
 }
 
@@ -23,6 +23,6 @@
 
 @media (max-width: 559px) {
   .contact-headline {
-    font-size: 26px;
+    font-size: 30px;
   }
 }
