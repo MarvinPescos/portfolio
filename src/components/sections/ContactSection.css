@@ -1,0 +1,28 @@
+.contact {
+  gap: 24px;
+}
+
+.contact-headline {
+  font-size: 32px;
+  font-weight: 300;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+  max-width: 560px;
+  text-wrap: balance;
+}
+
+.contact-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.contact-actions .btn {
+  padding: 13px 18px;
+}
+
+@media (max-width: 559px) {
+  .contact-headline {
+    font-size: 26px;
+  }
+}
