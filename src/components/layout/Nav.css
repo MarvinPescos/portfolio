@@ -1,0 +1,32 @@
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  display: flex;
+  gap: 4px;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  padding: 20px 0;
+  background: linear-gradient(var(--bg) 70%, rgba(15, 15, 14, 0));
+  font-size: 12px;
+}
+
+.nav a {
+  padding: 6px 10px;
+  border-radius: 999px;
+  color: var(--text-dim);
+  transition: color 0.2s, background-color 0.3s;
+}
+
+.nav a.active,
+.nav a.active:hover {
+  color: var(--bg);
+  background: var(--accent);
+}
+
+@media (max-width: 559px) {
+  .nav {
+    justify-content: flex-start;
+    padding: 14px 0;
+  }
+}
