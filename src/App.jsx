@@ -6,6 +6,7 @@ import TechStackSection from './components/sections/TechStackSection';
 import EducationSection from './components/sections/EducationSection';
 import ContactSection from './components/sections/ContactSection';
 import Footer from './components/layout/Footer';
+import Loader from './components/layout/Loader';
 import useReveal from './hooks/useReveal';
 import './App.css';
 
@@ -13,18 +14,21 @@ function App() {
   useReveal();
 
   return (
-    <div className="layout">
-      <Sidebar />
-      <main className="main">
-        <Nav />
-        <AboutSection />
-        <ProjectsSection />
-        <TechStackSection />
-        <EducationSection />
-        <ContactSection />
-        <Footer />
-      </main>
-    </div>
+    <>
+      <Loader />
+      <div className="layout">
+        <Sidebar />
+        <main className="main">
+          <Nav />
+          <AboutSection />
+          <ProjectsSection />
+          <TechStackSection />
+          <EducationSection />
+          <ContactSection />
+          <Footer />
+        </main>
+      </div>
+    </>
   );
 }
 

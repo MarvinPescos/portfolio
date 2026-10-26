@@ -131,6 +131,16 @@ export const education = [
   },
 ];
 
+// Boot log shown by the loader; `at` is the progress % when the line appears.
+export const loaderLogs = [
+  { at: 0, level: 'INFO', text: 'Booting FastAPI application' },
+  { at: 18, level: 'INFO', text: 'Connecting to PostgreSQL (Supabase)' },
+  { at: 36, level: 'INFO', text: 'Redis rate limiter ready' },
+  { at: 54, level: 'INFO', text: 'Loading projects: cms-core, lexchain' },
+  { at: 72, level: 'GET', text: '/portfolio  200 OK' },
+  { at: 92, level: 'INFO', text: 'Application startup complete' },
+];
+
 export const contact = {
   headline: [
     { text: 'Open to internships and junior ' },
