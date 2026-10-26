@@ -28,17 +28,50 @@
 .stack-items {
   display: flex;
   flex-direction: column;
-  gap: 7px;
+  gap: 4px;
   font-size: 13.5px;
 }
 
-.stack-items span {
-  transition: color 0.2s, transform 0.2s;
+.skill {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 3px 0;
+  transition: color 0.2s;
 }
 
-.stack-items span:hover {
-  color: var(--accent);
-  transform: translateX(3px);
+.skill:hover {
+  color: #fff;
+}
+
+.skill-icon {
+  width: 16px;
+  height: 16px;
+  flex: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* The SVG is used as a mask so its color can change on hover. */
+.skill-glyph {
+  width: 15px;
+  height: 15px;
+  background-color: var(--text-muted);
+  -webkit-mask: no-repeat center / contain;
+  mask: no-repeat center / contain;
+  transition: background-color 0.2s;
+}
+
+.skill:hover .skill-glyph {
+  background-color: var(--brand, var(--text));
+}
+
+.skill-dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--accent);
 }
 
 @media (max-width: 559px) {

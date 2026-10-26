@@ -12,8 +12,20 @@ export default function TechStackSection() {
           <div className="stack-cell" key={group} data-reveal style={stagger(i)}>
             <span className="stack-group mono">{group}</span>
             <div className="stack-items mono">
-              {items.map((item) => (
-                <span key={item}>{item}</span>
+              {items.map(({ name, icon, color }) => (
+                <div className="skill" key={name} style={color ? { '--brand': color } : undefined}>
+                  <span className="skill-icon" aria-hidden="true">
+                    {icon ? (
+                      <span
+                        className="skill-glyph"
+                        style={{ WebkitMaskImage: `url("${icon}")`, maskImage: `url("${icon}")` }}
+                      />
+                    ) : (
+                      <span className="skill-dot" />
+                    )}
+                  </span>
+                  <span>{name}</span>
+                </div>
               ))}
             </div>
           </div>

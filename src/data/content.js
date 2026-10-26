@@ -2,6 +2,18 @@ import cmsApiDocs from '../assets/projects/cms-api-docs.png';
 import coldBrewCoffee from '../assets/projects/cold-brew-coffee.png';
 import gospelBibleBaptist from '../assets/projects/gospel-bible-baptist.png';
 import lexchainApiDocs from '../assets/projects/lexchain-api-docs.png';
+import brunoIcon from '../assets/icons/bruno.svg';
+import dockerIcon from '../assets/icons/docker.svg';
+import fastapiIcon from '../assets/icons/fastapi.svg';
+import gitIcon from '../assets/icons/git.svg';
+import githubIcon from '../assets/icons/github.svg';
+import huggingfaceIcon from '../assets/icons/huggingface.svg';
+import postgresqlIcon from '../assets/icons/postgresql.svg';
+import pythonIcon from '../assets/icons/python.svg';
+import redisIcon from '../assets/icons/redis.svg';
+import solidityIcon from '../assets/icons/solidity.svg';
+import supabaseIcon from '../assets/icons/supabase.svg';
+import web3Icon from '../assets/icons/web3dotjs.svg';
 
 export const profile = {
   name: 'Marvin Pescos',
@@ -105,16 +117,57 @@ export const projects = [
   },
 ];
 
+// `icon` and `color` (brand color shown on hover) are optional; skills without an icon get a dot.
 export const stack = [
-  { group: 'Languages', items: ['Python', 'Solidity'] },
-  { group: 'Frameworks & Libraries', items: ['FastAPI', 'sentence-transformers'] },
-  { group: 'Databases', items: ['PostgreSQL', 'pgvector', 'Redis', 'Supabase'] },
+  {
+    group: 'Languages',
+    items: [
+      { name: 'Python', icon: pythonIcon, color: '#3776AB' },
+      { name: 'Solidity', icon: solidityIcon, color: '#e9e7e2' },
+    ],
+  },
+  {
+    group: 'Frameworks & Libraries',
+    items: [{ name: 'FastAPI', icon: fastapiIcon, color: '#009688' }, { name: 'sentence-transformers' }],
+  },
+  {
+    group: 'Databases',
+    items: [
+      { name: 'PostgreSQL', icon: postgresqlIcon, color: '#4169E1' },
+      { name: 'pgvector' },
+      { name: 'Redis', icon: redisIcon, color: '#FF4438' },
+      { name: 'Supabase', icon: supabaseIcon, color: '#3FCF8E' },
+    ],
+  },
   {
     group: 'AI & LLM Applications',
-    items: ['RAG pipelines', 'Text embeddings', 'LLM integration via Microsoft Foundry (Azure)', 'Langfuse'],
+    items: [
+      { name: 'RAG pipelines' },
+      { name: 'Text embeddings' },
+      { name: 'LLM integration via Microsoft Foundry (Azure)' },
+      { name: 'Hugging Face', icon: huggingfaceIcon, color: '#FFD21E' },
+      { name: 'Langfuse' },
+    ],
   },
-  { group: 'Blockchain', items: ['Solidity', 'Foundry', 'Web3.py'] },
-  { group: 'Tools & DevOps', items: ['AWS (EC2, S3)', 'Docker', 'Git', 'GitHub', 'Alembic', 'Bruno'] },
+  {
+    group: 'Blockchain',
+    items: [
+      { name: 'Solidity', icon: solidityIcon, color: '#e9e7e2' },
+      { name: 'Foundry' },
+      { name: 'Web3.py', icon: web3Icon, color: '#F16822' },
+    ],
+  },
+  {
+    group: 'Tools & DevOps',
+    items: [
+      { name: 'AWS (EC2, S3)' },
+      { name: 'Docker', icon: dockerIcon, color: '#2496ED' },
+      { name: 'Git', icon: gitIcon, color: '#F05032' },
+      { name: 'GitHub', icon: githubIcon, color: '#e9e7e2' },
+      { name: 'Alembic' },
+      { name: 'Bruno', icon: brunoIcon, color: '#F4AA41' },
+    ],
+  },
 ];
 
 export const education = [
