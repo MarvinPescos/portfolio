@@ -148,6 +148,32 @@
   }
 }
 
+/* Tablet: portrait beside the name and links so the card doesn't leave the right half empty. */
+@media (min-width: 560px) and (max-width: 959px) {
+  .sidebar {
+    display: grid;
+    grid-template-columns: 260px minmax(0, 1fr);
+    grid-template-areas:
+      'top top'
+      'portrait identity'
+      'portrait socials'
+      'actions actions';
+    grid-template-rows: auto auto 1fr auto;
+    gap: 24px 32px;
+  }
+
+  .sidebar-top { grid-area: top; }
+  .portrait { grid-area: portrait; align-self: start; }
+  .identity { grid-area: identity; }
+  .social-list { grid-area: socials; align-self: end; }
+
+  .sidebar-actions {
+    grid-area: actions;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
 @media (max-width: 420px) {
   .sidebar-top {
     flex-direction: column;
